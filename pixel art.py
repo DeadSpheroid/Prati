@@ -4,7 +4,7 @@ import turtle
 
 # Binary Image
 
-img = cv2.imread(r'C:\WJ Python\pyturtleprati\turtle_python\image.jpg',0)
+img = cv2.imread('./image.jpg',0)
 ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 width = int(img.shape[1])
 height = int(img.shape[0])
@@ -18,7 +18,7 @@ my_screen.screensize(width, height)
 my_screen.bgcolor('black')
 my_pen = turtle.Turtle()
 my_pen.color('white')
-my_screen.tracer(8)
+my_screen.tracer(16)
 #my_pen.hideturtle()
 my_pen.pencolor("white")
 # Printing Loop
